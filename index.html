@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Flowers</title>
+</head>
+<body>
+    <div class="greetings">
+    <!-- silahkan menambah kata sesuai keinginan dengan <span>text...</span -->
+        <span>F</span>
+        <span>O</span>
+        <span>R</span>
+        <span>Y</span>
+        <span>O</span>
+        <span>U</span>
+        <span>R</span>
+        <span>E</span>
+        <span>S</span>
+        <span>T</span>
+        <span>A</span>
+    </div>
+    <div class="description">
+        <span>Happy Birthday! wish you all the best</span>
+    </div>
+    <div class="button">
+        <button>
+            <!-- <a href="flower.html">Click this for more interesting part</a> -->
+            <a onclick="flower()">Klik sini coba</a>
+        </button>
+        
+    </div>
+</body>
+
+<script>
+    function flower(){
+        
+        Swal.fire({
+            title: 'Sweet!',
+            text: 'Cuma mau ngucapin hbd doang udah, gimana yaa dari dulu emang gabisa bikin kata kata tapi yaudah dah lah cuma mau ngasih kek gini doang, semoga masih inget sama janji yang udah kita buat yah waalaupun aku gapunya hak buat ngatur ngatur but, aku masih inget dan nepatin janjinya sampe sekarang walaupun aku belum sukses tapi kayanya sekarang kamu happy sama orang baru jadi keknya janji buat lamar kamu pas kamu wisuda keknya bakal aku cancel aja deh aku lebih seneng kalo liat kamu bahagia kaya gini jadi aku pengen kamu bahagia lebih lama atau bahkan nikah sama orang yang sekarang, Happy Birthday again!',
+            imageUrl: 'img/kucing.jpg',
+            imageWidth: 400,
+            imageHeight: 400,
+            imageAlt: 'Custom image',
+            confirmButtonText: "Klik disini lagi coba",
+        }).then(function(){
+            window.location= "flower.html"
+        })
+    }
+</script>
+</html>
